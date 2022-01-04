@@ -83,3 +83,7 @@ background-size: cover;
 .about__info {
   max-width: 550px;
 }
+
+.form__container {
+  width: 550px;
+}
