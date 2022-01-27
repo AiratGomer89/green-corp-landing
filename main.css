@@ -285,7 +285,6 @@ footer{
 
 
   .features {
-    background-color: white;
     padding: 50px 10px;
   }
 
@@ -308,7 +307,7 @@ footer{
 
   .features__feedback-right {
     flex-direction: column;
-    
+    align-items: initial;
   }
 
   .features__box h3 {    
@@ -318,6 +317,19 @@ footer{
   .features__savings-box { 
     margin-bottom: 30px;
     margin-right: 0px;
+  }
+
+  .promo {
+    flex-direction: column-reverse;
+  }
+
+  .promo__right {
+    padding: 50px 10px;
+  }
+
+  .promo__image {
+    width: 100%;
+    height: 500px;
   }
 
 }
@@ -331,18 +343,15 @@ footer{
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
+  grid-gap: 50px;
 }
 
 
 .card {
-  margin: 50px;
   padding: 35px 40px 25px 40px;
   border: 1px solid #D9E4E6;
   border-radius: 5px;
-
-  
-  
+  background: #FFFFFF;    
 }
 
 .card p{
@@ -361,14 +370,17 @@ footer{
   display: flex; 
   justify-content: center; 
   align-items: center;
-  color: #ad1714;
 }
 
-.fa-solar-panel {
+.card__logo.yellow {
   color: #ffb406;
 }
 
-.fa-chart-line {
+.card__logo.red {
+  color: #ad1714;
+}
+
+.card__logo.green {
   color: #22a030;
 }
 
@@ -378,6 +390,7 @@ footer{
   margin-bottom: 50px;
   border: 1px solid;
   border-color: #E6EAF4;
+  width: 100%;
 }
 
 .features__feedback {
@@ -414,6 +427,7 @@ footer{
 .features__box h3 {
   margin-bottom: 20px;
   font-size: 48px;
+  margin-top: 0;
 }
 
 .features__savings-box {
@@ -434,7 +448,8 @@ footer{
 }
 
 .promo__image {
-  background: url('img/promo.jpg');
+  background-image: url('img/promo.jpg');
+  width: 50%;
   background-position: center;
   background-size: cover;
   flex-shrink: 0;
@@ -450,25 +465,44 @@ footer{
   padding: 160px 60px;
 }
 
-.promo__right-card {
+.promo__text {
   background-color: white;
   padding: 30px 40px;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 26px;
   font-weight: 500;
   border-radius: 25px;
 }
 
-.promo__right-card p {
-  opacity: 80%;
-
+.promo__text p::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ec6b29;
+  margin-right: 10px;
 }
 
-.promo__right-card_round { 
-  height: 20px;
-  width: 20px;
-  background-color: #ec6b29;
-  border-radius: 50%;
-  
-  
+.promo__text p {
+  opacity: 80%;
+}
+
+.promo__text button {
+  background-color: #107b1c;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
+  padding: 15px 30px;
+}
+
+.promo__button-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.promo__text button i {
+  font-size: 15px;
+  margin-left: 5px;
 }
