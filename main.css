@@ -79,6 +79,8 @@ button:hover{
 background: url('img/back.png') no-repeat;
 background-position: center;
 background-size: cover;
+position: relative;
+
 }
 
 .about h1 {
@@ -514,9 +516,10 @@ footer{
   margin-left: 5px;
 }
 
-#orb-canvas {
+.orb-canvas {
   position: absolute;
   top: 0;
   height: 100%;
+  width: 100%;
   right: 0;
 }
