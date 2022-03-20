@@ -514,7 +514,7 @@ footer{
   margin-left: 5px;
 }
 
-.orb-canvas {
+#orb-canvas {
   position: absolute;
   top: 0;
   height: 100%;
