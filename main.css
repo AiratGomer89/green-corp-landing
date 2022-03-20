@@ -251,6 +251,7 @@ footer{
   .about {
       flex-direction: column-reverse;
       padding: 50px 10px;
+      position: relative;
   }
 
   .about h1 {
@@ -495,6 +496,12 @@ footer{
   font-size: 18px;
   box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
   padding: 15px 30px;
+  /*transition: background-color 0.3s ease-in;*/
+}
+
+.promo__text button:hover{
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
 }
 
 .promo__button-wrap {
@@ -505,4 +512,11 @@ footer{
 .promo__text button i {
   font-size: 15px;
   margin-left: 5px;
+}
+
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
 }
